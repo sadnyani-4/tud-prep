@@ -3,91 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TU Dortmund DSSH Prep Portal</title>
+    <title>DSSH Ace: Study & Quiz Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
 
-    <header class="bg-gradient-to-r from-emerald-700 to-blue-900 text-white py-12 px-6 text-center">
-        <h1 class="text-4xl font-extrabold">DSSH Entrance Assessment</h1>
-        <p class="mt-2 text-emerald-100 font-medium tracking-wide">Data Science in Sports and Health | TU Dortmund</p>
+    <nav class="bg-emerald-900 p-4 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <span class="font-bold text-xl">DSSH Exam Ace</span>
+            <div class="space-x-4">
+                <a href="#notes" class="hover:text-emerald-300">Notes</a>
+                <a href="#quiz" class="hover:text-emerald-300">Practice Test</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white py-16 px-6 border-b">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-black text-gray-900 mb-4">Mastering Sports & Health Data Science</h1>
+            <p class="text-xl text-gray-600">Comprehensive study notes and active recall for the TU Dortmund Assessment.</p>
+        </div>
     </header>
 
-    <main class="max-w-6xl mx-auto p-6 space-y-10">
+    <main class="max-w-5xl mx-auto p-6 space-y-20">
 
-        <section class="grid md:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-emerald-500">
-                <h3 class="font-bold text-lg text-emerald-700">Part 1: Sports Science</h3>
-                <p class="text-sm text-gray-600 italic">20 Multiple Choice Questions</p>
-                <ul class="mt-4 text-sm space-y-2">
-                    <li>• Workload & Training Models</li>
-                    <li>• Biomechanics & Motor Control</li>
-                    <li>• Cardiovascular & Metabolism</li>
-                </ul>
-            </div>
-            <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-blue-500">
-                <h3 class="font-bold text-lg text-blue-700">Part 2: Data Science</h3>
-                <p class="text-sm text-gray-600 italic">20 Multiple Choice Questions</p>
-                <ul class="mt-4 text-sm space-y-2">
-                    <li>• Linear Algebra & Calculus</li>
-                    <li>• Statistical Inference ($p$-values)</li>
-                    <li>• Deep Learning & Coding Basics</li>
-                </ul>
-            </div>
-            <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-purple-500">
-                <h3 class="font-bold text-lg text-purple-700">Part 3: Case Study</h3>
-                <p class="text-sm text-gray-600 italic">10-Page Scientific Report</p>
-                <ul class="mt-4 text-sm space-y-2">
-                    <li>• Research Question Formulation</li>
-                    <li>• Data Collection Methods</li>
-                    <li>• Statistical Analysis Plan</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="sports-health" class="bg-white p-8 rounded-2xl shadow-lg border border-slate-200">
-            <h2 class="text-2xl font-bold text-slate-800 mb-6">Sports & Health Knowledge Base</h2>
+        <section id="notes">
+            <h2 class="text-3xl font-bold mb-8 border-l-8 border-emerald-500 pl-4">Part 1: Sports & Health High-Yield Notes</h2>
+            
             <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h4 class="font-bold text-emerald-600 mb-3 uppercase text-sm">A. Sports Medicine & Physiology</h4>
-                    <ul class="space-y-3 text-gray-700">
-                        <li class="p-3 bg-emerald-50 rounded"><strong>Musculoskeletal:</strong> Active (muscles) vs. Passive (bones/ligaments) systems.</li>
-                        <li class="p-3 bg-emerald-50 rounded"><strong>Energy Metabolism:</strong> Aerobic vs. Anaerobic pathways (ATP-CP, Glycolysis).</li>
-                        <li class="p-3 bg-emerald-50 rounded"><strong>Neurophysiology:</strong> Motor unit recruitment and signal transduction.</li>
-                    </ul>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-bold text-emerald-700 text-xl mb-4">1. Energy Metabolism (Crucial)</h3>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <p><strong>Anaerobic Alactic:</strong> High intensity (0-10s). Uses ATP & Creatine Phosphate.</p>
+                        <p><strong>Anaerobic Lactic:</strong> High intensity (10-90s). Produces Lactate; glucose breakdown without O2.</p>
+                        <p><strong>Aerobic:</strong> Low/Moderate intensity (>2 mins). Uses O2 to burn carbs and fats in mitochondria.</p>
+                        <p class="bg-yellow-50 p-2 border-l-4 border-yellow-400 font-mono text-xs text-red-700">Exam Tip: Understand the "Lactate Threshold" – the point where lactate produced exceeds the clearance rate.</p>
+                    </div>
                 </div>
-                <div>
-                    <h4 class="font-bold text-blue-600 mb-3 uppercase text-sm">B. Training & Movement Science</h4>
-                    <ul class="space-y-3 text-gray-700">
-                        <li class="p-3 bg-blue-50 rounded"><strong>Biomechanics:</strong> Kinematics (motion) vs. Kinetics (forces).</li>
-                        <li class="p-3 bg-blue-50 rounded"><strong>Performance Diagnostics:</strong> VO2 Max testing and Lactate thresholds.</li>
-                        <li class="p-3 bg-blue-50 rounded"><strong>Training Control:</strong> Internal vs. External workload monitoring (RPE vs. GPS data).</li>
-                    </ul>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-bold text-blue-700 text-xl mb-4">2. Biomechanics & Physics</h3>
+                    <div class="space-y-4 text-sm text-gray-700">
+                        <p><strong>Kinetics:</strong> Study of forces (Gravity, Ground Reaction Force, Friction).</p>
+                        <p><strong>Kinematics:</strong> Description of motion (Velocity, Acceleration, Angles) without forces.</p>
+                        <p><strong>Newton's 2nd Law in Sports:</strong> $F = m \times a$. Crucial for calculating force plates data in jumps.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="bg-slate-800 text-white p-8 rounded-2xl shadow-xl">
-            <h2 class="text-2xl font-bold mb-4">Case Study Requirements</h2>
-            <p class="mb-6 text-slate-300">You must prepare a report on an interdisciplinary topic. Ensure you cover:</p>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="flex items-start space-x-3">
-                    <span class="bg-emerald-500 text-white rounded-full h-6 w-6 flex items-center justify-center flex-shrink-0">1</span>
-                    <p><strong>Methodology:</strong> Describe specific sports science data collection (e.g., IMU sensors, EMG).</p>
-                </div>
-                <div class="flex items-start space-x-3">
-                    <span class="bg-emerald-500 text-white rounded-full h-6 w-6 flex items-center justify-center flex-shrink-0">2</span>
-                    <p><strong>Statistics:</strong> Explain which math/stat models answer your research question.</p>
-                </div>
+        <section id="quiz" class="bg-emerald-50 p-8 rounded-3xl border-2 border-emerald-200 shadow-inner">
+            <h2 class="text-3xl font-bold text-emerald-900 mb-2 text-center">Interactive Practice Test</h2>
+            <p class="text-center text-emerald-700 mb-8">Test your knowledge before the real thing!</p>
+
+            <div id="quiz-container" class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <div id="question-area">
+                    </div>
+                <button id="next-btn" onclick="nextQuestion()" class="mt-6 w-full bg-emerald-600 text-white py-3 rounded-lg font-bold hover:bg-emerald-700 transition">Start Quiz</button>
+            </div>
+            
+            <div id="result-area" class="hidden max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg text-center">
+                <h3 class="text-2xl font-bold mb-4">Quiz Complete!</h3>
+                <p id="score-text" class="text-4xl font-black text-emerald-600 mb-4"></p>
+                <button onclick="location.reload()" class="text-emerald-600 underline">Try Again</button>
             </div>
         </section>
 
     </main>
 
-    <footer class="text-center py-10 text-slate-400 text-sm">
-        TU Dortmund DSSH Portal &bull; Study Hard, Play Hard
-    </footer>
+    <script>
+        const quizData = [
+            {
+                q: "Which energy system is primary during a 100m sprint lasting 10 seconds?",
+                a: ["Aerobic", "Anaerobic Lactic", "Anaerobic Alactic (ATP-CP)", "Beta-Oxidation"],
+                correct: 2
+            },
+            {
+                q: "In Biomechanics, what does 'Kinematics' focus on?",
+                a: ["The forces causing movement", "The description of movement (angles, velocity)", "Muscle fiber recruitment", "Bone density"],
+                correct: 1
+            },
+            {
+                q: "Which of the following is a measure of internal training load?",
+                a: ["Total distance run (km)", "Number of sprints", "Heart Rate (BPM)", "Average power output (Watts)"],
+                correct: 2
+            }
+        ];
+
+        let currentQ = -1;
+        let score = 0;
+
+        function nextQuestion() {
+            if (currentQ >= 0) {
+                const selected = document.querySelector('input[name="choice"]:checked');
+                if (!selected) { alert("Please select an answer!"); return; }
+                if (parseInt(selected.value) === quizData[currentQ].correct) { score++; }
+            }
+
+            currentQ++;
+
+            if (currentQ < quizData.length) {
+                displayQuestion();
+                document.getElementById('next-btn').innerText = "Submit Answer";
+            } else {
+                showResults();
+            }
+        }
+
+        function displayQuestion() {
+            const q = quizData[currentQ];
+            let html = `<p class="text-xs text-emerald-600 font-bold uppercase mb-2">Question ${currentQ + 1} of ${quizData.length}</p>`;
+            html += `<h3 class="text-xl font-bold mb-6">${q.q}</h3><div class="space-y-3">`;
+            q.a.forEach((opt, i) => {
+                html += `
+                    <label class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-gray-50 transition">
+                        <input type="radio" name="choice" value="${i}" class="mr-3 w-4 h-4 text-emerald-600">
+                        <span>${opt}</span>
+                    </label>
+                `;
+            });
+            html += `</div>`;
+            document.getElementById('question-area').innerHTML = html;
+        }
+
+        function showResults() {
+            document.getElementById('quiz-container').classList.add('hidden');
+            document.getElementById('result-area').classList.remove('hidden');
+            document.getElementById('score-text').innerText = `${score} / ${quizData.length}`;
+        }
+    </script>
 
 </body>
 </html>
