@@ -3,99 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TU Dortmund DS Prep Portal</title>
+    <title>TU Dortmund DSSH Prep Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-slate-50 text-slate-900">
 
-    <header class="bg-blue-900 text-white py-10 px-6 text-center shadow-lg">
-        <h1 class="text-3xl md:text-5xl font-bold">M.Sc. Data Science in Sports & Health</h1>
-        <p class="mt-4 text-blue-200 text-lg uppercase tracking-widest">Pre-Requisite Assessment Preparation</p>
+    <header class="bg-gradient-to-r from-emerald-700 to-blue-900 text-white py-12 px-6 text-center">
+        <h1 class="text-4xl font-extrabold">DSSH Entrance Assessment</h1>
+        <p class="mt-2 text-emerald-100 font-medium tracking-wide">Data Science in Sports and Health | TU Dortmund</p>
     </header>
 
-    <main class="max-w-5xl mx-auto p-6 space-y-12">
-        
-        <section id="syllabus">
-            <h2 class="text-2xl font-bold border-b-4 border-blue-500 inline-block mb-6">Core Focus Areas</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-xl shadow-md border-l-8 border-green-500">
-                    <h3 class="font-bold text-xl mb-2">1. Mathematics & Calculus</h3>
-                    <ul class="list-disc ml-5 space-y-1 text-gray-600">
-                        <li>Limits (One-sided, L'Hopital's Rule)</li>
-                        <li>Definite Integrals (Antiderivatives)</li>
-                        <li>Multivariate Functions & Gradients</li>
+    <main class="max-w-6xl mx-auto p-6 space-y-10">
+
+        <section class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-emerald-500">
+                <h3 class="font-bold text-lg text-emerald-700">Part 1: Sports Science</h3>
+                <p class="text-sm text-gray-600 italic">20 Multiple Choice Questions</p>
+                <ul class="mt-4 text-sm space-y-2">
+                    <li>• Workload & Training Models</li>
+                    <li>• Biomechanics & Motor Control</li>
+                    <li>• Cardiovascular & Metabolism</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-blue-500">
+                <h3 class="font-bold text-lg text-blue-700">Part 2: Data Science</h3>
+                <p class="text-sm text-gray-600 italic">20 Multiple Choice Questions</p>
+                <ul class="mt-4 text-sm space-y-2">
+                    <li>• Linear Algebra & Calculus</li>
+                    <li>• Statistical Inference ($p$-values)</li>
+                    <li>• Deep Learning & Coding Basics</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-purple-500">
+                <h3 class="font-bold text-lg text-purple-700">Part 3: Case Study</h3>
+                <p class="text-sm text-gray-600 italic">10-Page Scientific Report</p>
+                <ul class="mt-4 text-sm space-y-2">
+                    <li>• Research Question Formulation</li>
+                    <li>• Data Collection Methods</li>
+                    <li>• Statistical Analysis Plan</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="sports-health" class="bg-white p-8 rounded-2xl shadow-lg border border-slate-200">
+            <h2 class="text-2xl font-bold text-slate-800 mb-6">Sports & Health Knowledge Base</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="font-bold text-emerald-600 mb-3 uppercase text-sm">A. Sports Medicine & Physiology</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="p-3 bg-emerald-50 rounded"><strong>Musculoskeletal:</strong> Active (muscles) vs. Passive (bones/ligaments) systems.</li>
+                        <li class="p-3 bg-emerald-50 rounded"><strong>Energy Metabolism:</strong> Aerobic vs. Anaerobic pathways (ATP-CP, Glycolysis).</li>
+                        <li class="p-3 bg-emerald-50 rounded"><strong>Neurophysiology:</strong> Motor unit recruitment and signal transduction.</li>
                     </ul>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-md border-l-8 border-blue-500">
-                    <h3 class="font-bold text-xl mb-2">2. Linear Algebra</h3>
-                    <ul class="list-disc ml-5 space-y-1 text-gray-600">
-                        <li>Systems of Linear Equations</li>
-                        <li>Eigenvalues and Eigenvectors</li>
-                        <li>Matrix Operations & Rank</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-md border-l-8 border-purple-500">
-                    <h3 class="font-bold text-xl mb-2">3. Statistics & Probability</h3>
-                    <ul class="list-disc ml-5 space-y-1 text-gray-600">
-                        <li>Probability Distributions (Normal, Binomial)</li>
-                        <li>Hypothesis Testing ($p$-values, $t$-tests)</li>
-                        <li>Descriptive Statistics</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-md border-l-8 border-red-500">
-                    <h3 class="font-bold text-xl mb-2">4. Programming & Data Science</h3>
-                    <ul class="list-disc ml-5 space-y-1 text-gray-600">
-                        <li>Basic Algorithms (Sorting, Search)</li>
-                        <li>Machine Learning Basics (Supervised/Unsupervised)</li>
-                        <li>Data Acquisition in Sports Science</li>
+                <div>
+                    <h4 class="font-bold text-blue-600 mb-3 uppercase text-sm">B. Training & Movement Science</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="p-3 bg-blue-50 rounded"><strong>Biomechanics:</strong> Kinematics (motion) vs. Kinetics (forces).</li>
+                        <li class="p-3 bg-blue-50 rounded"><strong>Performance Diagnostics:</strong> VO2 Max testing and Lactate thresholds.</li>
+                        <li class="p-3 bg-blue-50 rounded"><strong>Training Control:</strong> Internal vs. External workload monitoring (RPE vs. GPS data).</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section class="bg-blue-50 p-8 rounded-2xl border border-blue-100">
-            <h2 class="text-2xl font-bold mb-4">Quick Formula Refresher</h2>
+        <section class="bg-slate-800 text-white p-8 rounded-2xl shadow-xl">
+            <h2 class="text-2xl font-bold mb-4">Case Study Requirements</h2>
+            <p class="mb-6 text-slate-300">You must prepare a report on an interdisciplinary topic. Ensure you cover:</p>
             <div class="grid md:grid-cols-2 gap-4">
-                <div class="bg-white p-4 rounded shadow-sm">
-                    <p class="text-sm text-gray-500 uppercase">Eigenvalue Equation</p>
-                    <p class="text-xl font-mono">$$A\mathbf{v} = \lambda\mathbf{v}$$</p>
+                <div class="flex items-start space-x-3">
+                    <span class="bg-emerald-500 text-white rounded-full h-6 w-6 flex items-center justify-center flex-shrink-0">1</span>
+                    <p><strong>Methodology:</strong> Describe specific sports science data collection (e.g., IMU sensors, EMG).</p>
                 </div>
-                <div class="bg-white p-4 rounded shadow-sm">
-                    <p class="text-sm text-gray-500 uppercase">Standard Normal Distribution</p>
-                    <p class="text-xl font-mono">$$Z = \frac{X - \mu}{\sigma}$$</p>
+                <div class="flex items-start space-x-3">
+                    <span class="bg-emerald-500 text-white rounded-full h-6 w-6 flex items-center justify-center flex-shrink-0">2</span>
+                    <p><strong>Statistics:</strong> Explain which math/stat models answer your research question.</p>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2 class="text-2xl font-bold mb-6">Essential Resources</h2>
-            <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <table class="w-full text-left">
-                    <thead class="bg-gray-100">
-                        <tr>
-                            <th class="p-4">Resource</th>
-                            <th class="p-4">Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="border-t">
-                            <td class="p-4 font-semibold text-blue-700"><a href="https://statistik.tu-dortmund.de/storages/statistik/r/Downloads/Studium/Studiengaenge-Infos/Data_Science/Self_Test_Master_Data_Science_Task.pdf" target="_blank">Official Self-Assessment PDF</a></td>
-                            <td class="p-4 italic text-sm text-red-600">Start here! This contains the actual sample questions from TU Dortmund.</td>
-                        </tr>
-                        <tr class="border-t">
-                            <td class="p-4 font-semibold text-blue-700">Pre-Course Moodle (English)</td>
-                            <td class="p-4 text-sm">Enrollment key: <code class="bg-gray-200 px-1">Bayes</code> (Search for course 33148).</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
     </main>
 
-    <footer class="text-center py-10 text-gray-400 text-sm">
-        Built for TU Dortmund MSc DS Applicants &bull; 2026
+    <footer class="text-center py-10 text-slate-400 text-sm">
+        TU Dortmund DSSH Portal &bull; Study Hard, Play Hard
     </footer>
 
 </body>
